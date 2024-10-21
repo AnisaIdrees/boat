@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 110px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.logo {
+    padding: 10px 20px;
+    padding-top: 30px;
+    cursor: pointer;
+    padding-bottom: 29px;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar li {
+    display:inline-block;
+    /* justify-content: space-evenly;
+    align-items: center; */
+    padding: 0px 30px;
+
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.navbar li a:hover {
+    color: rgb(207, 194, 4);
+    cursor: pointer;
+
+}
+
+button {
+    width: 137px;
+    height: 60px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 2.5em;
+    color: white;
+    background-color: rgb(7, 6, 6);
+    border: 2px solid white;
+}
+
+.btn2 button {
+    background-color: rgba(247, 49, 14, 0.905);
+    border: none;
+    margin: 10px;
+    width: 153px;
+    height: 65px;
+    margin-right: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 10px 5px;
+    padding-bottom: 20px;
+}
+
+.btn2 button i {
+    font-size: 24px;
+}
+.btn2 i{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.btn1 button {
+    margin-left: 69px;
+}
+/* first image */
+
+.first{
+    width: 100%;
+    height: 550px;
+    background-image: url(./f2.jpg);
+    background-repeat:no-repeat ;
+    background-size:cover;
+}
+
+.main{
+border-top: 3px solid red;
+border-bottom: 3px solid red;
+width: 100%;
+height: 790px;
+background-color: black;
+color: white;
+padding: 20px auto;
+
+}
+h1{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 10px;
+letter-spacing: 2px;
+
+}
+h3{
+display: flex;
+justify-content: center;
+align-items: center;
+color: rgba(255, 255, 255, 0.884);
+
+}
+span{
+/* font-family: "Playwrite CU", cursive;
+font-optical-sizing: auto;
+font-weight: weight;
+font-style: normal; */
+
+font-size: 40px;
+letter-spacing: -2px;
+text-transform:capitalize;
+padding-left:5px;
+  }
+  .wel{
+    font-weight: lighter;
+  }
+  .cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    padding: 20px;
+    padding-top: 30px;
+  }
+  div img {
+      border-radius: 0.3em;
+  }
+  .btn3 {
+    width: 169px;
+    height: 53px;
+    border: 1px solid white;
+    margin:20px auto;
+  }
+
+.b .btn3{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+  a{
+    text-decoration: none;
+  }
+  .container{
+background-image: url(./bg.jpg);
+height: 1200px;
+width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+border-top: 3px solid red;
+padding-top: 40px;
+
+  }
+  h1{
+    padding-top: 0;
+    font-size: 49px;
+  }
+  h2{
+    
+    text-align: center;
+    font-weight: lighter;
+    font-size: 44px;
+    padding-bottom: 10px;
+  }
+  .pa{
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: orangered;
+  }
+  .pa:hover{
+    color: rgb(255, 164, 28);
+  }
+  p{
+    
+    font-weight: lighter;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    font-size: 20px;
+    
+  }
+  .sp{
+    padding-right: 10px;
+    margin-left: -11px;
+    
+  }
+  ul li{
+    padding-top: 20px;
+  }
+  .islamabad {
+   display: flex;
+   justify-content: center;
+   justify-content: space-evenly;
+   padding-top: 60px;
+   padding-bottom: 20px;
+  }
+  .islamabad-btn{
+  
+    width: 169px;
+    height: 53px;
+    border: 1px solid white;
+    margin:20px auto;
+    font-size: 15px;
+    text-align: center;
+  }
+  .islamabad-btn:hover{
+    background-color: orangered;
+    cursor: pointer;
+  }
+  .islamabad i{
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  .faisalabad{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  .faisalabad-btn{
+    width: 169px;
+    height: 53px;
+    border: 1px solid white;
+    margin:20px auto;
+    font-size: 15px;
+    text-align: center;
+  }
+ .faisalabad-btn:hover{
+  cursor: pointer;
+  background-color: orangered;
+}
+
+  .faisalabad i{
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  /* ////////////////////////////// */
+  /* 2nd container */
+  .container2{
+    width: 100%;
+    height: 2370px;
+    background-color: black;
+    border-bottom: 3px solid red;
+  }
+  .h1-4-padding{
+    padding-top:60px;
+  }
+  /* card-div-1 */
+  .card-div-1{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+  }
+  /* card-div2 */
+  .card-div-2{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  /* card-div3 */
+  .card-div-3{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  /* card-div 4 */
+  .card-div-4{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .box1{
+  
+    width: 330px;
+  }
+  .box-sp{
+    font-size: 28px;
+    font-weight:bold;
+    padding-right: 10px;
+  }
+  h5{
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  .exporium{
+    padding-bottom: 10px;
+    color: orangered;
+  }
+  .exporium:hover{
+    color: rgb(206, 178, 24);
+    cursor: pointer;
+  }
+  .text{
+    padding-top: 20px;
+    text-align: center;
+  }
+  .box-btn{
+    width: 169px;
+    height: 53px;
+    border: 1px solid white;
+    margin:20px auto;
+    font-size: 15px;
+    text-align: center;
+
+  }
+  .box-btn i{
+    padding-left:10px;
+    font-size: 18px;
+  }
+  .box-btn:hover{
+    cursor: pointer ;
+    background-color: rgba(216, 64, 8, 0.863);
+  }
+  /* container 3 */
+  .container3{
+    width: 100%;
+    height: 710px;
+    background-color: rgba(0, 0, 0, 0.904);
+  }
+  /* village div */
+  .village-div{
+    display: flex;
+    justify-content:left;
+    gap: 45px;
+    padding-top: 40px;
+  }
+  .village-btn{
+    background-color: rgba(0, 128, 0, 0.801);
+    border: none;
+    width: 169px;
+    height: 53px;
+    margin:20px auto;
+    margin-top: 80px;
+  }
+  .village-btn i{
+    padding-left:10px;
+    font-size: 19px;
+    
+  }
+  .village-btn:hover{
+    border: 2px solid rgba(0, 0, 255, 0.685);
+    box-shadow: 2px 2px 1px -2px -3px rgba(219, 219, 248, 0.856);
+    cursor: pointer;
+  }
+  .village-text{
+    padding: 50px;
+  }
+  /* ///////////CONTAINER 4///////////// */
+  .container4{
+    width: 100%;
+    height: 1630px;
+    background-color: black;
+  }
+  .location-main-div{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  .location-main-div2{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  .location-main-div3{
+    display: flex;
+    justify-content: center;
+  }
+ .loc-logo{
+margin-left:120px;
+margin-top: 30px;
+  }
+  .os{
+    font-size: 40px;
+  }
+  .os i{
+    margin-right: 10px;
+  }
+  /* dabba1 */
+  .dabba1{
+    width: 310px;
+    height: 250px;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    margin-top: 30px;
+
+  }
+h6{
+  color: red;
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+}
+.saltn{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.expres{
+  font-size: 26px;
+  font-weight: normal;
+}
+h5{
+  font-size: 23px;
+}
+.dabba-text{
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 10px;
+}
+h2{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* food section */
+.food-images{
+  border-radius: none;
+  display: flex;
+  justify-content: center;
+  justify-content:space-evenly ;
+}
+/* last container */
+.last-container{
+  width: 100%;
+  height: 680px;
+  background-color: rgba(0, 0, 0, 0.897);
+}
+.content-div{
+  display: flex;
+  justify-content: center;
+  
+  padding-top: 80px;
+}
+.content-box{
+  
+  width: 330px;
+  height: 510px;
+  margin-bottom: 100px; 
+}
+
+
+.content-box2{
+
+  width: 290px;
+  height: 510px;
+  margin-right: -20px;
+  padding-left: 20px;
+}
+.content-box3{
+ 
+  width: 290px;
+  height: 510px;
+}
+.content-box4{
+
+  width: 290px;
+  height: 510px;
+}
+.text-last{
+  margin-top: -10px;
+}
+ul li{
+  font-size:18px;
+  color: rgba(255, 253, 250, 0.747);
+  letter-spacing: none;
+}
+ul li:hover{
+  cursor: pointer;
+  transition-duration: 1s;
+  text-shadow: 2px 4px 2px rgb(253, 86, 8);
+  
+}
+.same-class{
+  letter-spacing: none;
+  font-size: 18px;
+}
+.same-class:hover{
+  cursor: pointer;
+  color: rgba(238, 150, 19, 0.877);
+}
+.bold{
+  color: white;
+  font-weight: bold;
+}
+.icon-bar .icon-list i{
+  color: rgb(250, 10, 10);
+  margin:4px;
+}
+.image-list{
+  margin-left: -40px;
+}

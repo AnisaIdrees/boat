@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- font Awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .navbar-brand {
+      padding: 0;
+      margin: 0;
+
+    }
+
+    .navbar-nav a {
+      color: #333;
+      font-weight: bold;
+    }
+
+    .navbar-brand {
+      padding: 0;
+    }
+
+    .navbar-brand img {
+      width: 100px;
+      height: auto;
+    }
+
+    .navbar-nav {
+      flex-direction: row;
+    }
+
+    .navbar-nav li {
+      padding: 0 10px;
+    }
+
+    .navbar-nav a {
+      color: #333;
+      font-weight: bold;
+    }
+
+    .navbar-nav a:hover {
+      color: #666;
+    }
+
+    .ml-auto {
+      margin-left: auto !important;
+    }
+
+    .mr-auto {
+      margin-right: auto !important;
+    }
+
+    .fa-user-circle,
+    .fa-shopping-cart {
+      font-size: 24px;
+      color: #333;
+      background-color: #fff;
+      border-radius: 50%;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-menu {
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-item {
+      padding: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .dropdown-item:hover {
+      background-color: #f0f0f0;
+    }
+
+    .navbar-brand img {
+      width: 100px;
+      height: auto;
+      margin-left: 50px;
+      /* yeh code logo image ke liye margin left dega */
+    }
+
+    .fa-regular.fa-user {
+      color: black;
+      font-size: 1.4em;
+      font-weight: 20px;
+    }
+
+    .nav-item-i {
+      background-color: white;
+      border-radius: 60%;
+      box-shadow: 2px 1px 1px gray;
+      margin-right: 15px;
+    }
+
+    .nav-item-i2 {
+      margin-right: 30px;
+      background-color: white;
+      border-radius: 60%;
+      box-shadow: 2px 1px 1px gray;
+    }
+
+    .d-flex.p-2 .img-thumbnail {
+      border: none;
+    }
+
+    .container .img-thumbnail {
+      border: none;
+    }
+
+    p.fs-3 {
+      font-weight: bold;
+    }
+
+    .container-main {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 80px;
+      margin-left: 80px;
+      padding: 40px;
+    }
+
+    span {
+      background-color: rgba(0, 0, 0, 0.315);
+      width: 30px;
+      height: 40px;
+    }
+
+    .headphone-container {
+      background-color: #0a0202f3;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .headphone-img {
+      position: relative;
+      top: -90px;
+    }
+
+    .col {
+      border: 1px solid rgb(235, 63, 1);
+      margin: 20px;
+      height: 100px;
+      padding: 20px;
+      font-weight: bold;
+
+    }
+
+    .col i {
+      font-size: 30px;
+      padding: 10px;
+      color: rgb(235, 63, 1);
+    }
+
+    .badge.text-bg-white.text-wrap {
+      color: black;
+      font-size: 30px;
+    }
+
+    .p {
+      font-weight: normal;
+      font-size: 20px;
+      flex-wrap: nowrap;
+      overflow: hidden;
+    }
+
+    .container-2 {
+      display: flex;
+      justify-content: space-around;
+      margin: 50px;
+    }
+
+    .container-md-2 {
+      width: 230px;
+      height: 230px;
+    }
+
+    .container-md-3 {
+      background-color: rgba(245, 222, 179, 0.432);
+      width: 1000px;
+      height: 280px;
+      margin: 10px auto;
+      margin-top: 100px;
+    }
+
+    .container-md-3 img {
+      margin-top: -50px;
+    }
+
+    .container-md-text {
+      float: right;
+      /* padding-right: 250px;
+  padding-top: 70px; */
+      padding: 30px;
+    }
+
+    /* .fs-1{
+  font-size: ;
+} */
+    .main-headphone {
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      gap: 10px;
+
+    }
+
+    .Headphone-1 {
+      background-color: rgba(0, 0, 0, 0.363);
+      width: 110px;
+    }
+
+    .Headphone-1 img {
+      margin-top: -30px;
+      padding-left: 10px;
+      margin-left: -10px;
+    }
+
+    .Headphone-2 {
+      background-color: rgba(3, 196, 255, 0.349);
+      width: 110px;
+      height: 110px;
+
+    }
+
+    .Headphone-2 img {
+      padding-left: 10px;
+      margin-right: 10px;
+      margin-top: -28px;
+      margin-left: -10px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin: 30px;
+      margin-left: 90px;
+      text-align: center;
+    }
+
+    .filter-bg {
+      background-color: rgba(0, 0, 0, 0.459);
+      width: 160px;
+      height: 150px;
+
+    }
+
+    .filter-bg img {
+      margin-top: -39px;
+      margin-left: -20px;
+
+
+    }
+
+    .icons {
+      padding-left: 40px;
+      width: 0px;
+      background-color: white;
+    }
+
+    .fa-solid.fa-square-full-black {}
+
+    .filter-bg2 {
+      background-color: rgba(135, 232, 235, 0.233);
+      width: 160px;
+      height: 150px;
+      
+    }
+
+    .filter-bg2 img ,.filter-bg3 img {
+      margin-top: -40px;
+      margin-left: -20px;
+
+    }
+.filter-bg3{
+  background-color: rgba(236, 12, 12, 0.329);
+      width: 160px;
+      height: 150px;
+}
+    .card-container {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .headband {
+      margin-top: 80px;
+      font-size: 160px;
+      letter-spacing: 30px;
+      font-weight: bold;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.247);
+      margin-left: 15%;
+      position: absolute;
+
+
+    }
+
+    .div-section {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 20px;
+      margin-left: 10px;
+    }
+
+    .overlep img {
+      margin-top: 150px;
+    }
+
+    .box2 {
+
+      width: 190px;
+      height: 190px;
+      margin-top: -140px;
+      margin-left: -160px;
+    }
+
+    .box-flex {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .box2-right {
+      width: 190px;
+      height: 190px;
+      margin-top: -140px;
+      margin-right: -180px;
+    }
+
+    h3 {
+      font-weight: bold;
+    }
+
+    .box-flex-3 {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 70px;
+    }
+
+    .box3 {
+      width: 190px;
+      height: 190px;
+    }
+
+    .container-for-3-image {
+      width: 420px;
+      height: 470px;
+      
+    }
+    .container-for-3-image img{
+    margin: 20px auto;
+    margin-left: 30px;
+    }
+    .container-earwear {
+      width: 420px;
+      height: 470px;
+      
+    }
+
+    .container-2-last {
+      display: flex;
+      justify-content: center;
+      gap: 70px;
+    }
+
+    .container-earhead {
+      /* background-color: rgba(0, 0, 0, 0.158); */
+      width: 120px;
+      height: 120px;
+
+    }
+
+    .container-earhead img {
+      margin-left: 40px;
+      margin-top: 50px;
+      position: absolute;
+    }
+
+    h3 {
+      position: relative;
+      top: 70px;
+    }
+
+    .container-p {
+
+      margin-top: 150px;
+      width: 400px;
+      padding: 10px;
+    }
+
+    .input-group.mb-3 {
+      width: 400px;
+    }
+    .para{
+      text-align: center;
+      margin-top: 20px;
+    }
+    .container-footer{
+      display: flex;
+      justify-content:center;
+      gap: 20px;
+      margin-left: 60px;
+      margin-top: 40px;
+    }
+    .container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+    }
+.container-h img {
+  margin-top: -10px;
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="./soat.png " alt="Logo" width="100" mx-20>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Shop
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Shop</a>
+              <a class="dropdown-item" href="#">Shop</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Shop</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Plug-In-sale</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              More
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Shop</a>
+
+              <a class="dropdown-item" href="#">Shop</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item-i">
+            <a class="nav-link" href="#">
+              <i class="fa-regular fa-user"></i>
+            </a>
+          </li>
+          <li class="nav-item-i2">
+            <a class="nav-link" href="#">
+              <i class="fa-solid fa-cart-shopping"></i>
+
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- <p class="fs-1"></p> -->
+  <div class="container-main">
+    <!-- Content here -->
+    <div class="container">
+      <p class="fs-3">Amazing <br>sound quality</p>
+      <!-- <span><img src="./img p1.webp" class="img-thumbnail" alt="..."width="130px" 
+            style="background-color: rgba(0, 0, 0, 0.438);"></span>
+      
+        <span ><img src="./img p2.jpg"class="img-thumbnail" alt="..."width="130px"></span> -->
+      <div class="main-headphone">
+        <div class="Headphone-1">
+
+          <img src="./img p1.webp" alt="Headphone" width="135px">
+        </div>
+        <div class="Headphone-2">
+          
+          <img src="./img_p2-removebg-preview.png" alt="Headphone" width="135px">
+        </div>
+      </div>
+    </div>
+    <div class="container-h">
+      <h2 style="font-size: 80px; font-weight: bold;letter-spacing:14px;margin-left: 100px;margin-top: -90px;
+      color: rgba(0, 0, 0, 0.349);">sound</h2>
+      <img src="./img 1.webp" class="img-thumbnail" alt="..." width="370px" height="150px" style="background-color: white;
+      border: none ;">
+
+    </div>
+    <div class="container mt-100">
+      <!-- Content here -->
+      <p class="fs-3">Superior headphones</p>
+    </div>
+    <!-- /// -->
+  </div>
+  <!-- ///m-c -c -->
+  <div class="container text-center ">
+    <div class="row ">
+      <div class="col">
+        <i class="fa-regular fa-circle-check"></i> 1 Year Warranty
+      </div>
+      <div class="col">
+        <i class="fa-solid fa-box"></i>
+
+
+        15 Days Easy Returns
+      </div>
+      <div class="col">
+
+        <i class="fa-solid fa-truck"></i>
+
+        Free <br>Shipping
+      </div>
+    </div>
+  </div>
+  <!-- ///////////////////////////// -->
+  <div class="container-2">
+    <!-- Content here -->
+    <div class="container-md-2">
+      <p class="fs-3">Adaptive ear crups and headband</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, aspe
+        cupiditate inventore aspern</p>
+    </div>
+    <div class="container-md-2">
+      <img src="./w1.png" alt="" height="300px" width="300px">
+    </div>
+    <!-- ///////////// -->
+  </div>
+  <!-- //////////// -->
+  <div class="container-md-3">
+    <img src="./w2.webp" alt="" height="340px">
+    <div class="container-md-text">
+      <p class="fs-3">
+        lightweight and
+        portable
+      </p>
+      <p class="p">The powerful 300mAh battery provides up to 8 hours of audio bliss</p>
+    </div>
+
+  </div>
+
+  <h1>Product Recommeded For You</h1>
+  <div class="card-container">
+    <!-- //////// -->
+    <div class="card-box">
+      <div class="filter-bg">
+        <img src="./img p1.webp" alt="" width="180px" class="filter-image">
+      </div>
+      <h5>Rockerz 400</h5>
+
+
+      <h6 style="color: red;">$9900.0
+        <span class="icons">
+          <i style="color:skyblue;" class=" fa-solid fa-square-full"></i>
+          <i style="color:black;" class="fa-solid fa-square-full"></i>
+          <i style="color:brown;" class="fa-solid fa-square-full"></i>
+        </span>
+      </h6>
+
+      <!-- //////////card box/// -->
+    </div>
+    <!-- ///////// -->
+    <div class="card-box">
+      <div class="filter-bg3">
+        <img src="./red-removebg-preview.png" alt="" width="195px" class="filter-image">
+      </div>
+      <h5>Rockerz 400</h5>
+
+
+      <h6 style="color: red;">$3900.0
+        <span class="icons">
+          <i style="color:rgba(255, 107, 243, 0.938);" class=" fa-solid fa-square-full"></i>
+          <i style="color:rgba(79, 245, 129, 0.658);" class="fa-solid fa-square-full"></i>
+          <i style="color:rgba(241, 209, 23, 0.836);" class="fa-solid fa-square-full"></i>
+        </span>
+      </h6>
+
+      <!-- //////////card box/// -->
+    </div>
+    <div class="card-box">
+      <div class="filter-bg2" style="background-color:skyblue;">
+        <img src="./img_p2-removebg-preview.png" alt="" width="180px" class="filter-image">
+      </div>
+      <h5>Rockerz 400</h5>
+
+
+      <h6 style="color: red;">$5200.0
+        <span class="icons">
+          <i style="color:rgb(80, 23, 236);" class=" fa-solid fa-square-full"></i>
+          <i style="color:rgba(0, 0, 0, 0.164);" class="fa-solid fa-square-full"></i>
+          <i style="color:rgba(112, 165, 42, 0.541);" class="fa-solid fa-square-full"></i>
+        </span>
+      </h6>
+
+      <!-- //////////card box/// -->
+    </div>
+    <!-- /card-container/// -->
+  </div>
+  <!-- /////// -->
+  <div>
+    <h1 class="headband">headband</h1>
+  </div>
+  <div class="div-section">
+    <!-- <div>vhjjiuerrrrrrrrrrgvjsuug</div> -->
+    <div class="overlep"><img src="./mh-removebg-preview.png" alt="" width="370px" height="320px"></div>
+    <!-- <div>dhgfhjfyweeeh</div> -->
+    <!-- d-s closinggg tag/// -->
+  </div>
+  <div class="box-flex">
+    <div class="box2">
+      <h4 style="flex-wrap: wrap;">Wireless Entertrainment</h4>
+      <p>using blutooth technology,coonect your samrt</p>
+    </div>
+    <div class="box2-right">
+      <h4 style="flex-wrap: wrap;">Lighweight and portable</h4>
+      <p>using blutooth technology,coonect your samrt</p>
+    </div>
+  </div>
+  <!-- //////////// -->
+  <div class="box-flex-3">
+    <div class="box3">
+      <h4 style="flex-wrap: wrap;">40mm Dynamic Drivers</h4>
+      <div>
+        <p>using blutooth technology,coonect your samrt</p>
+      </div>
+    </div>
+    <div class="box3">
+      <h4 style="flex-wrap: wrap;">Ergonomically Designed</h4>
+      <div>
+        <p>using blutooth technology,coonect your samrt</p>
+      </div>
+    </div>
+    <div class="box3">
+      <h4 style="flex-wrap: wrap;">In buit with Mic Single</h4>
+      <div>
+        <p>using blutooth technology,coonect your samrt</p>
+      </div>
+    </div>
+    <div class="box3">
+      <h4 style="flex-wrap: wrap;">Superior Playback Music</h4>
+      <div>
+        <p>using blutooth technology,coonect your samrt</p>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="boat">The boAthead vibe</h1>
+  <div class="container-2-last">
+    <div class="container-for-3-image">
+    <img src="./image.png" alt=""width="320px">
+    </div>
+    <div class="container-earwear">
+      <div class="container-earhead">
+
+        <img src="./img_p2-removebg-preview.png" alt="" width="190px">
+        <h3>#1 Eearwear Brand</h3>
+        <div class="container-p">
+          <p>Subscribe to email alerts. We promise to not a spam your inbox.</p>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address"
+            aria-describedby="button-addon2">
+          <button class="btn btn-outline-dark" type="button" id="button-addon2">Subscribe</button>
+        </div>
+
+      </div>
+    </div>
+    <!-- //////////// -->
+  </div>
+  <!-- /////////////////// -->
+  <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt sed consectetur voluptas
+    dignissimo</p>
+    <!-- ////////////// -->
+    <div class="container-footer">
+      <div class="container">
+        <p class="fw-bold">Company</p>
+        <p class="font-monospace">True Wireless Earbuds</p>
+        <p class="font-monospace">Wireless headphones</p>
+        <p class="font-monospace">wired headphones</p>
+        <p class="font-monospace">Wireless Speaker</p>
+        <p class="font-monospace">Home Audio</p>
+      </div>
+      <div class="container">
+        <p class="fw-bold">Help</p>
+        <p class="font-monospace">Track Your Order</p>
+        <p class="font-monospace">Warranty & Support</p>
+        <p class="font-monospace">Return policy</p>
+        <p class="font-monospace">Bulks orders</p>
+        <p class="font-monospace">FAQs</p>
+        <p class="font-monospace">Why Buy Direct</p>
+        
+      </div>
+      <div class="container">
+        <p class="fw-bold">Shop</p>
+        <p class="font-monospace">About boAt</p>
+        <p class="font-monospace">News</p>
+        <p class="font-monospace">Read Our Blogs</p>
+        <p class="font-monospace">Social Responsibility</p>
+        <p class="font-monospace">High5boatheads</p>
+      </div>
+      <div class="container">
+        <p class="fw-bold"><span style="background-color: white;"><i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-pinterest"></i></span></p>
+          <img src="./soat.png" alt=""width="230px"height="210px"style="margin-left:-50px;">
+         <a href=""><img src="./gp-removebg-preview.png" alt=""width="170px" style="margin-top: -30px;margin-left: -50px;"></a>
+          
+          
+      </div>
+      <!-- /////////// -->
+    </div>
+    <!-- ////////// -->
+    <div class="container-fluid">
+      <div class="container">
+        <span style="background-color: white;"><a href=""><img src="./logo1-removebg-preview.png" alt=""width="100px"></a>
+          <a href=""><img src="./logo2-removebg-preview.png" alt=""width="100px"></a>
+          <a href=""><img src="./logo3-removebg-preview.png" alt=""width="100px"></a></span>
+      </div>
+      <div class="container">
+        <div class="text-nowrap bg-body-secondary border" style="width: 8rem;">
+          2021 Sourav aich privated limited.All right reversed.
+        </div>
+      </div>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
